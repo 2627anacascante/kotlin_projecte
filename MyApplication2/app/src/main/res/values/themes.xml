@@ -1,0 +1,15 @@
+<resources>
+    <style name="Base.Theme.OrientaApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primari</item>
+        <item name="colorOnPrimary">@color/on_primari</item>
+        <item name="colorSecondary">@color/secundari</item>
+        <item name="colorOnSecondary">@color/on_secundari</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/fons</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/text_principal</item>
+        <item name="colorOnSurfaceVariant">@color/text_secundari</item>
+    </style>
+
+    <style name="Theme.OrientaApp" parent="Base.Theme.OrientaApp" />
+</resources>

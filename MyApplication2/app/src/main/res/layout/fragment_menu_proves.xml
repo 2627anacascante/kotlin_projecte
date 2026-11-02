@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuProvesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            style="@style/TitolPantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titol_menu_proves" />
+
+        <Button android:id="@+id/btnLogo" style="@style/BotoPrincipal" android:text="@string/btn_logo" />
+        <Button android:id="@+id/btnLogin" style="@style/BotoPrincipal" android:text="@string/btn_login" />
+        <Button android:id="@+id/btnRegistre" style="@style/BotoPrincipal" android:text="@string/btn_registre" />
+        <Button android:id="@+id/btnAjudaInicial" style="@style/BotoPrincipal" android:text="@string/btn_ajuda_inicial" />
+        <Button android:id="@+id/btnUsuaris" style="@style/BotoPrincipal" android:text="@string/btn_usuaris" />
+        <Button android:id="@+id/btnUsuari" style="@style/BotoPrincipal" android:text="@string/btn_usuari" />
+        <Button android:id="@+id/btnQuestionaris" style="@style/BotoPrincipal" android:text="@string/btn_questionaris" />
+        <Button android:id="@+id/btnCrearQuestionari" style="@style/BotoPrincipal" android:text="@string/btn_crear_questionari" />
+        <Button android:id="@+id/btnFiltre" style="@style/BotoPrincipal" android:text="@string/btn_filtre" />
+        <Button android:id="@+id/btnMenu" style="@style/BotoPrincipal" android:text="@string/btn_menu" />
+        <Button android:id="@+id/btnConfiguracio" style="@style/BotoPrincipal" android:text="@string/btn_configuracio" />
+        <Button android:id="@+id/btnDades" style="@style/BotoPrincipal" android:text="@string/btn_dades" />
+        <Button android:id="@+id/btnAjuda" style="@style/BotoPrincipal" android:text="@string/btn_ajuda" />
+        <Button android:id="@+id/btnDialeg" style="@style/BotoSecundari" android:text="@string/btn_dialeg" />
+    </LinearLayout>
+</ScrollView>

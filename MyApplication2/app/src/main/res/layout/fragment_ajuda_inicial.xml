@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay"
+    tools:context=".AjudaInicialFragment"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/txtTitolAjuda"
+        style="@style/TitolPantalla"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:text="@string/ajuda_titol"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnEntesos"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="160dp"
+        android:minHeight="56dp"
+        android:text="@string/entesos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkNoMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:text="@string/no_mostrar"
+        android:textColor="@android:color/white"
+        app:buttonTint="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnEntesos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bafarades: cadena horizontal de 3 -->
+    <TextView
+        android:id="@+id/bafQuestionaris"
+        style="@style/Bafarada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/ajuda_questionaris"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bafUsuaris"
+        app:layout_constraintBottom_toTopOf="@id/fletxa1" />
+
+    <TextView
+        android:id="@+id/bafUsuaris"
+        style="@style/Bafarada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/ajuda_usuaris"
+        app:layout_constraintStart_toEndOf="@id/bafQuestionaris"
+        app:layout_constraintEnd_toStartOf="@id/bafFiltre"
+        app:layout_constraintBottom_toTopOf="@id/fletxa2" />
+
+    <TextView
+        android:id="@+id/bafFiltre"
+        style="@style/Bafarada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/ajuda_filtre"
+        app:layout_constraintStart_toEndOf="@id/bafUsuaris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fletxa3" />
+
+    <!-- Fletxes (decoratives: TalkBack les salta) -->
+    <ImageView
+        android:id="@+id/fletxa1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_fletxa_avall"
+        app:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/bafQuestionaris"
+        app:layout_constraintEnd_toEndOf="@id/bafQuestionaris"
+        app:layout_constraintBottom_toTopOf="@id/navInferior" />
+
+    <ImageView
+        android:id="@+id/fletxa2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_fletxa_avall"
+        app:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/bafUsuaris"
+        app:layout_constraintEnd_toEndOf="@id/bafUsuaris"
+        app:layout_constraintBottom_toTopOf="@id/navInferior" />
+
+    <ImageView
+        android:id="@+id/fletxa3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_fletxa_avall"
+        app:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/bafFiltre"
+        app:layout_constraintEnd_toEndOf="@id/bafFiltre"
+        app:layout_constraintBottom_toTopOf="@id/navInferior" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navInferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_inferior"
+        app:paddingBottomSystemWindowInsets="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

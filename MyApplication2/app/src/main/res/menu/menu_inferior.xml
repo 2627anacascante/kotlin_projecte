@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_questionaris"
+        android:icon="@drawable/ic_questionari"
+        android:title="@string/nav_questionaris" />
+    <item
+        android:id="@+id/nav_usuaris"
+        android:icon="@drawable/ic_persona"
+        android:title="@string/nav_usuaris" />
+    <item
+        android:id="@+id/nav_filtre"
+        android:icon="@drawable/ic_filtre"
+        android:title="@string/nav_filtre" />
+</menu>

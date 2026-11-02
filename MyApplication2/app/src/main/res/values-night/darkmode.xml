@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primari">#9FA8DA</color>
+    <color name="on_primari">#1A237E</color>
+    <color name="secundari">#80CBC4</color>
+    <color name="on_secundari">#00332C</color>
+    <color name="fons">#121212</color>
+    <color name="superficie">#1E1E1E</color>
+    <color name="text_principal">#E6E1E5</color>
+    <color name="text_secundari">#CAC4D0</color>
+    <color name="error">#F2B8B5</color>
+    <color name="overlay">#E6000000</color>
+</resources>

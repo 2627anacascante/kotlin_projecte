@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">OrientaApp</string>
+
+    <!-- Menú temporal (MenuProvesFragment) -->
+    <string name="titol_menu_proves">Pantalles de l\'app</string>
+    <string name="btn_logo">Pantalla inicial (logo)</string>
+    <string name="btn_login">Inici de sessió</string>
+    <string name="btn_registre">Registre</string>
+    <string name="btn_ajuda_inicial">Panell d\'ajuda inicial</string>
+    <string name="btn_usuaris">Llista d\'usuaris</string>
+    <string name="btn_usuari">Afegir / editar usuari</string>
+    <string name="btn_questionaris">Llista de qüestionaris</string>
+    <string name="btn_crear_questionari">Crear qüestionari</string>
+    <string name="btn_filtre">Filtre</string>
+    <string name="btn_menu">Menú</string>
+    <string name="btn_configuracio">Configuració de l\'app</string>
+    <string name="btn_dades">Dades personals</string>
+    <string name="btn_ajuda">Ajuda</string>
+    <string name="btn_dialeg">Diàleg d\'esborrar</string>
+
+    <!-- Logo -->
+    <string name="desc_logo">Logotip d\'OrientaApp</string>
+    <string name="eslogan">Orientació educativa</string>
+    <string name="carregant">Carregant…</string>
+
+    <!-- Login i registre -->
+    <string name="titol_login">Inici de sessió</string>
+    <string name="hint_usuari">Nom d\'usuari</string>
+    <string name="hint_contrasenya">Contrasenya</string>
+    <string name="entrar">Entrar</string>
+    <string name="oblidat">Has oblidat la contrasenya?</string>
+    <string name="no_tens_usuari">No tens usuari?</string>
+    <string name="registrat">Registra\'t</string>
+    <string name="titol_registre">Registre</string>
+    <string name="primera_vegada">Primera vegada a l\'app? Crea el teu compte.</string>
+    <string name="hint_nom">Nom</string>
+    <string name="hint_cognoms">Cognoms</string>
+    <string name="hint_telefon">Telèfon</string>
+    <string name="hint_email">Correu electrònic</string>
+    <string name="crear_compte">Crear compte</string>
+    <string name="ja_tens_usuari">Ja tens usuari? Inicia sessió</string>
+
+    <!-- Panell d'ajuda inicial -->
+    <string name="ajuda_titol">Com funciona l\'app?</string>
+    <string name="ajuda_questionaris">Aquí pots configurar els qüestionaris</string>
+    <string name="ajuda_usuaris">Aquí pots seleccionar un usuari</string>
+    <string name="ajuda_filtre">Aquí pots filtrar la cerca</string>
+    <string name="entesos">Entesos</string>
+    <string name="no_mostrar">No tornar a mostrar</string>
+
+    <!-- Navegació -->
+    <string name="nav_questionaris">Qüestionaris</string>
+    <string name="nav_usuaris">Usuaris</string>
+    <string name="nav_filtre">Filtre</string>
+    <string name="accio_afegir">Afegir</string>
+    <string name="accio_menu">Més opcions</string>
+    <string name="enrere">Tornar enrere</string>
+
+    <!-- Usuaris -->
+    <string name="titol_usuaris">Usuaris</string>
+    <string name="titol_usuari">Usuari</string>
+    <string name="desc_esborrar_usuari">Esborrar usuari</string>
+    <string name="hint_edat">Edat</string>
+    <string name="hint_ambit">Àmbit</string>
+    <string name="hint_interessos">Interessos</string>
+    <string name="hint_estudis">Estudis previs</string>
+    <string name="hint_perfil">Perfil de personalitat</string>
+    <string name="guardar">Guardar</string>
+
+    <!-- Qüestionaris -->
+    <string name="titol_questionaris">Qüestionaris</string>
+    <string name="desc_esborrar_questionari">Esborrar qüestionari</string>
+    <string name="titol_crear_questionari">Crear qüestionari</string>
+    <string name="pregunta1">1. Quina àrea t\'interessa?</string>
+    <string name="pregunta2">2. Quins són els teus punts forts?</string>
+    <string name="pregunta3">3. Escull 3 professions</string>
+    <string name="hint_resposta">Resposta</string>
+    <string name="prof_informatica">Informàtica</string>
+    <string name="prof_sanitat">Sanitat</string>
+    <string name="prof_educacio">Educació</string>
+    <string name="prof_art">Art i disseny</string>
+    <string name="prof_enginyeria">Enginyeria</string>
+    <string name="afegir_pregunta">Afegir pregunta</string>
+
+    <!-- Filtre -->
+    <string name="titol_filtre">Filtre</string>
+    <string name="netejar">Netejar</string>
+    <string name="aplicar">Aplicar</string>
+
+    <!-- Menú i configuració -->
+    <string name="titol_menu">Menú</string>
+    <string name="tancar_sessio">Tancar sessió</string>
+    <string name="mode_fosc">Mode fosc</string>
+    <string name="mida_lletra">Mida de la lletra</string>
+    <string name="contrast">Contrast</string>
+    <string name="idioma">Idioma</string>
+    <string name="notificacions">Notificacions</string>
+    <string-array name="idiomes">
+        <item>Català</item>
+        <item>Castellà</item>
+        <item>Anglès</item>
+    </string-array>
+
+    <!-- Ajuda -->
+    <string name="versio">Versió de l\'aplicació: 1.0</string>
+    <string name="mostrar_ajuda_inicial">Mostrar el panell d\'ajuda inicial</string>
+    <string name="veure_ajuda">Veure el panell d\'ajuda ara</string>
+    <string name="ajuda_text">Si tens dubtes, contacta amb l\'administrador del teu centre.</string>
+
+    <!-- Diàleg -->
+    <string name="dialeg_titol">Esborrar l\'usuari?</string>
+    <string name="dialeg_missatge">Aquesta acció no es pot desfer.</string>
+    <string name="cancellar">Cancel·lar</string>
+    <string name="esborrar">Esborrar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
