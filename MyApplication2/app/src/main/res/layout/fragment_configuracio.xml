@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfiguracioFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/superficie"
+        app:navigationContentDescription="@string/enrere"
+        app:navigationIcon="@drawable/ic_enrere"
+        app:title="@string/btn_configuracio" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchModeFosc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/mode_fosc"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/TextEtiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/sliderLletra"
+                android:text="@string/mida_lletra" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderLletra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="2"
+                android:value="16"
+                android:valueFrom="12"
+                android:valueTo="24" />
+
+            <TextView
+                style="@style/TextEtiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/sliderContrast"
+                android:text="@string/contrast" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderContrast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="10"
+                android:value="50"
+                android:valueFrom="0"
+                android:valueTo="100" />
+
+            <TextView
+                style="@style/TextEtiqueta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinnerIdioma"
+                android:text="@string/idioma" />
+
+            <Spinner
+                android:id="@+id/spinnerIdioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:entries="@array/idiomes"
+                android:minHeight="48dp" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/switchNotificacions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="@string/notificacions"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

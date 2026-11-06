@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AjudaFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/superficie"
+        app:navigationContentDescription="@string/enrere"
+        app:navigationIcon="@drawable/ic_enrere"
+        app:title="@string/btn_ajuda" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/desc_logo"
+            android:src="@drawable/ic_logo"
+            app:tint="@color/primari" />
+
+        <TextView
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/versio" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switchAjudaInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/mostrar_ajuda_inicial"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnVeureAjuda"
+            style="@style/BotoSecundari"
+            android:text="@string/veure_ajuda"
+            app:icon="@drawable/ic_ajuda" />
+
+        <TextView
+            style="@style/TextNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/ajuda_text" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barra"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/superficie"
+        app:navigationContentDescription="@string/enrere"
+        app:navigationIcon="@drawable/ic_enrere"
+        app:title="@string/titol_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnConfiguracio"
+            style="@style/BotoSecundari"
+            android:layout_marginTop="0dp"
+            android:text="@string/btn_configuracio"
+            app:icon="@drawable/ic_config" />
+
+        <Button
+            android:id="@+id/btnDades"
+            style="@style/BotoSecundari"
+            android:text="@string/btn_dades"
+            app:icon="@drawable/ic_persona" />
+
+        <Button
+            android:id="@+id/btnAjuda"
+            style="@style/BotoSecundari"
+            android:text="@string/btn_ajuda"
+            app:icon="@drawable/ic_ajuda" />
+
+        <Button
+            android:id="@+id/btnTancarSessio"
+            style="@style/BotoPrincipal"
+            android:layout_marginTop="40dp"
+            android:text="@string/tancar_sessio"
+            app:backgroundTint="@color/error" />
+    </LinearLayout>
+</LinearLayout>
