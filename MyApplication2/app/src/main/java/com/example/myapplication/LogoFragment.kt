@@ -10,5 +10,11 @@ class LogoFragment : Fragment(R.layout.fragment_logo) {
         super.onViewCreated(view, savedInstanceState)
         // Tocar qualsevol lloc de la pantalla porta al login
         //view.setOnClickListener { navegarA(LoginFragment()) }
+        view.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainerView, LoginFragment())
+                .addToBackStack(null)
+                .commit()
+        }
     }
 }
