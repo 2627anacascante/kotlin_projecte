@@ -12,12 +12,12 @@ class QuestionarisFragment : Fragment(R.layout.fragment_questionaris) {
 
         view.findViewById<MaterialToolbar>(R.id.barra).setOnMenuItemClickListener { item ->
             when (item.itemId) {
-                //R.id.accio_afegir -> navegarA(CrearQuestionariFragment())
-                //R.id.accio_menu -> navegarA(MenuFragment())
+                R.id.accio_afegir -> navegarA(CrearQuestionariFragment())
+                R.id.accio_menu -> navegarA(MenuFragment())
             }
             true
         }
 
-        //configurarBarraInferior(view, R.id.nav_questionaris)
+        configurarBarraInferior(view, R.id.nav_questionaris)
     }
 }

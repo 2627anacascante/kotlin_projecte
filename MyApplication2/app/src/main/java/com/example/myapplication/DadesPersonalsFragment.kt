@@ -10,10 +10,10 @@ class DadesPersonalsFragment : Fragment(R.layout.fragment_dades_personals) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //configurarFletxaEnrere(view)
+        configurarFletxaEnrere(view)
 
         view.findViewById<Button>(R.id.btnGuardar).setOnClickListener {
-            //tornarEnrere()
+            tornarEnrere()
         }
     }
 }

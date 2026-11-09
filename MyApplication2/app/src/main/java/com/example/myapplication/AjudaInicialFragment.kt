@@ -11,7 +11,7 @@ class AjudaInicialFragment : Fragment(R.layout.fragment_ajuda_inicial) {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.btnEntesos).setOnClickListener {
-            //navegarA(UsuarisFragment())
+            navegarAPrincipal(UsuarisFragment())
         }
     }
 }

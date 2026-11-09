@@ -11,21 +11,20 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //configurarFletxaEnrere(view)
+        configurarFletxaEnrere(view)
 
         view.findViewById<Button>(R.id.btnConfiguracio).setOnClickListener {
-            //navegarA(ConfiguracioFragment())
+            navegarA(ConfiguracioFragment())
         }
         view.findViewById<Button>(R.id.btnDades).setOnClickListener {
-            //navegarA(DadesPersonalsFragment())
+            navegarA(DadesPersonalsFragment())
         }
         view.findViewById<Button>(R.id.btnAjuda).setOnClickListener {
-            //navegarA(AjudaFragment())
+            navegarA(AjudaFragment())
         }
         // Tancar sessió: buida tota la pila i va al login
         view.findViewById<Button>(R.id.btnTancarSessio).setOnClickListener {
-            parentFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
-            //navegarA(LoginFragment())
+            navegarAPrincipal(LoginFragment())
         }
     }
 }

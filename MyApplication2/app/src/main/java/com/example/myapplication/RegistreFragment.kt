@@ -12,10 +12,10 @@ class RegistreFragment : Fragment(R.layout.fragment_registre) {
 
         // En crear el compte, la primera vegada es mostra l'ajuda inicial
         view.findViewById<Button>(R.id.btnCrearCompte).setOnClickListener {
-            //navegarA(AjudaInicialFragment())
+            navegarA(AjudaInicialFragment())
         }
         view.findViewById<Button>(R.id.btnJaTens).setOnClickListener {
-            //navegarA(LoginFragment())
+            navegarA(LoginFragment())
         }
     }
 }

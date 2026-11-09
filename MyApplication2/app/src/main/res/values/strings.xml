@@ -114,4 +114,11 @@
     <string name="esborrar">Esborrar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Missatges de toast -->
+    <string name="detall_usuari">%1$s · %2$s · %3$d anys</string>
+    <string name="usuari_nou">Usuari nou %1$d</string>
+    <string name="toast_afegit">Afegit: %1$s</string>
+    <string name="toast_modificat">Modificat: %1$s</string>
+    <string name="toast_eliminat">Eliminat: %1$s</string>
 </resources>

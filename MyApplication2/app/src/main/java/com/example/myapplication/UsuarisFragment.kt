@@ -13,12 +13,12 @@ class UsuarisFragment : Fragment(R.layout.fragment_usuaris) {
         // Icones de la barra superior: + i ⋮
         view.findViewById<MaterialToolbar>(R.id.barra).setOnMenuItemClickListener { item ->
             when (item.itemId) {
-                //R.id.accio_afegir -> navegarA(UsuariFragment())
-                //R.id.accio_menu -> navegarA(MenuFragment())
+                R.id.accio_afegir -> navegarA(UsuariFragment())
+                R.id.accio_menu -> navegarA(MenuFragment())
             }
             true
         }
 
-        //configurarBarraInferior(view, R.id.nav_usuaris)
+        configurarBarraInferior(view, R.id.nav_usuaris)
     }
 }

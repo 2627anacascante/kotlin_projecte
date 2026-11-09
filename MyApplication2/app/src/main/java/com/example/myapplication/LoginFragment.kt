@@ -11,10 +11,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.btnEntrar).setOnClickListener {
-            //navegarA(UsuarisFragment())
+            navegarAPrincipal(UsuarisFragment())
         }
         view.findViewById<Button>(R.id.btnRegistre).setOnClickListener {
-            //navegarA(RegistreFragment())
+            navegarA(RegistreFragment())
         }
     }
 }

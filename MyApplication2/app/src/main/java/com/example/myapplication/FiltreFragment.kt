@@ -12,9 +12,9 @@ class FiltreFragment : Fragment(R.layout.fragment_filtre) {
 
         // De moment no filtra: només porta a la llista d'usuaris
         view.findViewById<Button>(R.id.btnAplicar).setOnClickListener {
-            //navegarA(UsuarisFragment())
+            navegarA(UsuarisFragment())
         }
 
-        //configurarBarraInferior(view, R.id.nav_filtre)
+        configurarBarraInferior(view, R.id.nav_filtre)
     }
 }

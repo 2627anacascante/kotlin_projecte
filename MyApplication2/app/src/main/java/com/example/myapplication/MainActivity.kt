@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         // Fragment inicial (només la primera vegada, no en girar la pantalla)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragmentContainerView, MenuProvesFragment())
+                .add(R.id.fragmentContainerView, LoginFragment())   
                 .commit()
         }
     }

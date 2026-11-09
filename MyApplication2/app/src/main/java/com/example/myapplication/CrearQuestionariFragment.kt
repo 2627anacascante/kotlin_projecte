@@ -10,10 +10,10 @@ class CrearQuestionariFragment : Fragment(R.layout.fragment_crear_questionari) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //configurarFletxaEnrere(view)
+        configurarFletxaEnrere(view)
 
         view.findViewById<Button>(R.id.btnGuardar).setOnClickListener {
-            //tornarEnrere()
+            tornarEnrere()
         }
     }
 }
