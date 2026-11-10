@@ -34,3 +34,6 @@ class UsuariHolder(vista: View) : RecyclerView.ViewHolder(vista) {
         }
     }
 }
+//bindingAdapterPosition és la posició de l'item dins l'adapter.
+// NO_POSITION indica que no hi ha cap posició vàlida (per exemple, si l'item ha estat eliminat).
+//ReciclerView és un component que mostra una llista d'elements de manera eficient, reutilitzant les vistes quan es fa scroll.

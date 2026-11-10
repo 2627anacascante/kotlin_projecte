@@ -1,20 +1,15 @@
+package com.example.myapplication
+
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.MenuFragment
-import com.example.myapplication.R
-import com.example.myapplication.RepositoriUsuaris
-import com.example.myapplication.Usuari
-import com.example.myapplication.UsuarisAdapter
-import com.example.myapplication.configurarBarraInferior
-import com.example.myapplication.navegarA
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-class UsuarisFragment : Fragment(R.layout.fragment_usuaris) {
+class UsuariFragment : Fragment(R.layout.fragment_usuaris) {
 
     private lateinit var adapter: UsuarisAdapter
 

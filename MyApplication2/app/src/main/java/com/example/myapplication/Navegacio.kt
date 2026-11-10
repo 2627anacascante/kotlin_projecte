@@ -9,6 +9,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 fun Fragment.navegarA(fragment: Fragment) {
     parentFragmentManager.beginTransaction()
         .setReorderingAllowed(true)
+    //setReorderingAllowed(true) millora el rendiment i evita problemes amb fragments que es reordenen incorrectament durant les transaccions.
+    // Això és especialment útil quan es fan múltiples transaccions de fragments en una sola operació.
         .replace(R.id.fragmentContainerView, fragment)
         .addToBackStack(null)
         .commit()

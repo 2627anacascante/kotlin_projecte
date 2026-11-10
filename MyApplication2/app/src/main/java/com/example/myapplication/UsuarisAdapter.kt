@@ -16,6 +16,8 @@ class UsuarisAdapter(
     private val alModificar: (Int) -> Unit,
     private val alEsborrar: (Int) -> Unit
 ) : RecyclerView.Adapter<UsuariHolder>() {
+    //RecyclerView.Adapter és una classe abstracta, per això cal implementar els 3 mètodes següents.
+    // Serveix per a crear i omplir les files de la llista. El RecyclerView només crea les files que es veuen a la pantalla, i les reutilitza quan es fa scroll.
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsuariHolder {
         val vista = LayoutInflater.from(parent.context)
