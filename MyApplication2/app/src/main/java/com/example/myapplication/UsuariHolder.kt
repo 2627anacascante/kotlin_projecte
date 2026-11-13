@@ -26,7 +26,9 @@ class UsuariHolder(vista: View) : RecyclerView.ViewHolder(vista) {
         // (no abans), perquè pot haver canviat si s'han afegit/eliminat files.
         itemView.setOnClickListener {
             val pos = bindingAdapterPosition
+//bindingAdapterPosition és la posició de l'item dins l'adapter. NO_POSITION indica que no hi ha cap posició vàlida (per exemple, si l'item ha estat eliminat).
             if (pos != RecyclerView.NO_POSITION) alModificar(pos)
+//ReciclerView és un component que mostra una llista d'elements de manera eficient, reutilitzant les vistes quan es fa scroll.
         }
         btnEsborrar.setOnClickListener {
             val pos = bindingAdapterPosition
@@ -34,6 +36,6 @@ class UsuariHolder(vista: View) : RecyclerView.ViewHolder(vista) {
         }
     }
 }
-//bindingAdapterPosition és la posició de l'item dins l'adapter.
-// NO_POSITION indica que no hi ha cap posició vàlida (per exemple, si l'item ha estat eliminat).
-//ReciclerView és un component que mostra una llista d'elements de manera eficient, reutilitzant les vistes quan es fa scroll.
+//alModificar i alEsborrar són funcions lambda que es passen com a paràmetres a la funció pinta.
+// Aquestes funcions s'executen quan es toca la fila o el botó d'esborrar, respectivament,
+// i reben com a argument la posició de l'usuari dins l'adapter.
