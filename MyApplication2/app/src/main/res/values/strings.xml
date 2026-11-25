@@ -124,4 +124,16 @@
     <string name="toast_afegit">Afegit: %1$s</string>
     <string name="toast_modificat">Modificat: %1$s</string>
     <string name="toast_eliminat">Eliminat: %1$s</string>
+
+    <!-- Errors de validació (ACT07.1) -->
+    <string name="error_obligatori">Aquest camp és obligatori</string>
+    <string name="error_usuari">Mínim 3 caràcters, sense espais</string>
+    <string name="error_usuari_existeix">Aquest nom d\'usuari ja existeix</string>
+    <string name="error_credencials">Usuari o contrasenya incorrectes</string>
+    <string name="error_nom">Només lletres, i no pot estar buit</string>
+    <string name="error_contrasenya">Mínim 8 caràcters, amb lletres i números</string>
+    <string name="error_telefon">Ha de tenir 9 xifres</string>
+    <string name="error_email">Correu no vàlid (exemple: nom@domini.cat)</string>
+    <string name="compte_creat">Compte creat correctament</string>
+
 </resources>
