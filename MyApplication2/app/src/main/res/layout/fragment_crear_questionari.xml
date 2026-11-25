@@ -76,27 +76,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="@string/prof_informatica" />
+                    android:text="@string/informatica" />
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.Material3.Chip.Filter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/prof_sanitat" />
+                    android:text="@string/sanitat" />
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.Material3.Chip.Filter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/prof_educacio" />
+                    android:text="@string/educacio" />
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.Material3.Chip.Filter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/prof_art" />
+                    android:text="@string/art" />
                 <com.google.android.material.chip.Chip
                     style="@style/Widget.Material3.Chip.Filter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/prof_enginyeria" />
+                    android:text="@string/enginyeria" />
             </com.google.android.material.chip.ChipGroup>
 
             <Button
