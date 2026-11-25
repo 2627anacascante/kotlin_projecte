@@ -12,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/superficie"
+        app:logo="@drawable/ic_logo"
+        app:logoDescription="@string/desc_logo"
         app:title="@string/titol_filtre" />
 
     <LinearLayout
@@ -31,25 +33,64 @@
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/CampText"
-            android:hint="@string/hint_edat">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:importantForAutofill="no"
-                android:inputType="number" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            style="@style/TextEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/hint_edat" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/CampText"
-            android:hint="@string/hint_ambit">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
+        <!-- Un rang d'edats es filtra millor amb un Slider que amb text lliure -->
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderEdat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hint_edat"
+            android:stepSize="1"
+            android:value="16"
+            android:valueFrom="12"
+            android:valueTo="99" />
+
+        <TextView
+            style="@style/TextEtiqueta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_ambit" />
+
+        <!-- L'àmbit és un conjunt fix d'opcions: millor Chips de selecció que text lliure -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipsAmbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:text="@string/informatica" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sanitat" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/educacio" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/art" />
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enginyeria" />
+        </com.google.android.material.chip.ChipGroup>
 
         <LinearLayout
             android:layout_width="match_parent"

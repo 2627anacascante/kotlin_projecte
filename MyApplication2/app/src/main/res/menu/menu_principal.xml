@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/accio_configuracio"
+        android:title="@string/btn_configuracio" />
+    <item
+        android:id="@+id/accio_dades"
+        android:title="@string/btn_dades" />
+    <item
+        android:id="@+id/accio_ajuda"
+        android:title="@string/btn_ajuda" />
+    <item
+        android:id="@+id/accio_tancar_sessio"
+        android:title="@string/tancar_sessio" />
+</menu>

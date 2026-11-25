@@ -11,6 +11,8 @@
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/superficie"
+        app:logo="@drawable/ic_logo"
+        app:logoDescription="@string/desc_logo"
         app:menu="@menu/menu_llista"
         app:title="@string/titol_usuaris"
         app:layout_constraintTop_toTopOf="parent"

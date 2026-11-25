@@ -1,5 +1,6 @@
 package com.example.myapplication
 import android.view.View
+import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.appbar.MaterialToolbar
@@ -51,4 +52,21 @@ fun Fragment.navegarAPrincipal(fragment: Fragment) {
         .setReorderingAllowed(true)
         .replace(R.id.fragmentContainerView, fragment)
         .commit()
+}
+
+// Menú real de l'app (PopupMenu ancorat a la icona ⋮ de la barra), no una
+// pantalla més que simplement es navega com si fos un botó.
+fun Fragment.mostrarMenuPrincipal(ancora: View) {
+    val popup = PopupMenu(requireContext(), ancora)
+    popup.menuInflater.inflate(R.menu.menu_principal, popup.menu)
+    popup.setOnMenuItemClickListener { item ->
+        when (item.itemId) {
+            R.id.accio_configuracio -> navegarA(ConfiguracioFragment())
+            R.id.accio_dades -> navegarA(DadesPersonalsFragment())
+            R.id.accio_ajuda -> navegarA(AjudaFragment())
+            R.id.accio_tancar_sessio -> navegarAPrincipal(LoginFragment())
+        }
+        true
+    }
+    popup.show()
 }

@@ -15,7 +15,7 @@ class RegistreFragment : Fragment(R.layout.fragment_registre) {
             navegarA(AjudaInicialFragment())
         }
         view.findViewById<Button>(R.id.btnJaTens).setOnClickListener {
-            navegarA(LoginFragment())
+            tornarEnrere()
         }
     }
 }
